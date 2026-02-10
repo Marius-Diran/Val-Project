@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #f1c984)
+            drop-shadow(0 0 10px #f1c984)
+            drop-shadow(0 0 15px #e1a847)
+            drop-shadow(0 0 20px #e1a847)
+            drop-shadow(0 0 30px #e1a847);
+    fill: #c2a572; /* sets the icon color */
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #f1c984)
+            drop-shadow(0 0 20px #f1c984)
+            drop-shadow(0 0 30px #e1a847)
+            drop-shadow(0 0 40px #e1a847)
+            drop-shadow(0 0 50px #e1a847);
+    fill: #e1a847;
+  }
+}
+
+.glow-icon {
+  animation: glow 1.5s infinite alternate;
+}
