@@ -4,6 +4,7 @@
     font-family: 'Merriweather', serif;
     line-height: 1.5;
     font-weight: 400;
+    color: #d9d5cc
 }
 
 @keyframes glow {
@@ -25,6 +26,27 @@
   }
 }
 
+@keyframes glow-text {
+  0%, 100% {
+    filter: drop-shadow(0 0 0.5px #d4a8c8)
+            drop-shadow(0 0 0.5px #d4a8c8);
+    fill: #b8859a; /* sets the icon color */
+  }
+  50% {
+    filter: drop-shadow(0 0 2px #d4a8c8)
+            drop-shadow(0 0 2px #d4a8c8);
+    fill: #b8859a;
+  }
+}
+
+.playwrite {
+    font-family: 'Playwrite US Trad', serif;
+}
+
 .glow-icon {
   animation: glow 1.5s infinite alternate;
+}
+
+.glow-text {
+  animation: glow-text 1.5s infinite alternate;
 }
