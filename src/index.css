@@ -39,6 +39,30 @@
   }
 }
 
+@keyframes small-heart {
+  0%, 100% {
+    filter: drop-shadow(0 0 0.5px #f1c984)
+            drop-shadow(0 0 0.5px #f1c984);
+    fill: #f1c984; /* sets the icon color */
+  }
+  50% {
+    filter: drop-shadow(0 0 2px #f1c984)
+            drop-shadow(0 0 2px #f1c984);
+    fill: #f1c984;
+  }
+}
+
+@keyframes text-gold-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 1px rgba(241, 201, 132, 0.5));
+    fill: #f1c984; /* sets the icon color */
+  }
+  50% {
+    filter: drop-shadow(0 0 2px rgba(241, 201, 132, 0.6));
+    fill: #f1c984;
+  }
+}
+
 .playwrite {
     font-family: 'Playwrite US Trad', serif;
 }
@@ -49,4 +73,34 @@
 
 .glow-text {
   animation: glow-text 1.5s infinite alternate;
+}
+
+.small-heart {
+  animation: small-heart 1s infinite alternate;
+}
+
+.text-gold-glow { animation: text-gold-glow 1.5s infinite alternate; }
+
+/* Custom scrollbar styling */
+.overflow-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-scroll::-webkit-scrollbar-track {
+  background: #31302c;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb {
+  background: #4c422f;
+  border-radius: 4px;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb:hover {
+  background: #5a4f38;
+}
+
+/* Firefox scrollbar */
+.overflow-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #4c422f #31302c;
 }
